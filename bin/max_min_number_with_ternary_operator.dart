@@ -5,11 +5,7 @@ void main() {
   int number_2 = int.parse(stdin.readLineSync()); //4
   int number_3 = int.parse(stdin.readLineSync()); //2
   int max, min = 0;
-  max = (number_1 > number_2)
-      ? (number_1 > number_3 ? number_1 : number_3)
-      : (number_2 > number_1)
-      ? (number_2 > number_3 ? number_2 : number_3)
-      : number_3;
+  max = (number_1 > number_2) ? (number_1 > number_3 ? number_1 : number_3) : (number_2 > number_1) ? (number_2 > number_3 ? number_2 : number_3) : number_3;
   // if (number_1 > number_2) {
   //   if (number_1 > number_3) {
   //     max = number_1;
@@ -39,11 +35,10 @@ void main() {
   //   }
   // }
 
-  min = (number_1 < number_2)
-      ? (number_1 < number_3 ? number_1 : number_3)
-      : (number_2 < number_3)
-      ? (number_2 < number_1 ? number_2 : number_1)
-      : number_3;
+
+
+
+  min = (number_1 < number_2) ? (number_1 < number_3 ? number_1 : number_3) : (number_2 < number_3) ? (number_2 < number_1 ? number_2 : number_1) : number_3;
 
   print("max = $max,   min = $min");
 }
